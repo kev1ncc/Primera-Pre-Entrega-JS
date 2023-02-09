@@ -1,10 +1,7 @@
-var parcial, final, promedio;
-parcial = parseFloat(prompt("Parcial"));
-final = parseFloat(prompt("Final"));
-promedio = (parcial+final)/2;
-
-if(promedio >= 7.0){
-    document.write("El promedio es "+promedio+" APROBADO");
-}else{
-    document.write("El promedio es "+promedio+" DESAPROBADO");
+function CalcularPromedio(){
+    var v1 = document.getElementById("n1").value;
+    var v2 = document.getElementById("n2").value;
+    var v3 = document.getElementById("n3").value;
+    var pro = (parseFloat(v1)+parseFloat(v2)+parseFloat(v3))/3;
+    document.getElementById("promedio").innerHTML = pro;
 }
